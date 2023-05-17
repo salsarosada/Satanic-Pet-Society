@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
     public GameObject creditos;
-    /*public void Inicio()
+
+    public void Inicio()
     {
-        SceneManager.LoadScene("SampleScene");
-    }*/
+        SceneManager.LoadScene("Inicio");
+    }
 
     public void Creditos()
     {

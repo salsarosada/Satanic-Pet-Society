@@ -12,20 +12,44 @@ public class Barra : MonoBehaviour
     public Sprite bano;
     public GameObject menuPausa;
     public GameObject botonPausa;
+    public GameObject cam;
+    public Transform[] puntos;
+    public float vel;
+    public Transform mov;
+    public Animator animPanelBlanco;
+
+    void Start()
+    {
+        mov = puntos[0];
+
+    }
+
+    void Update()
+    {
+        cam.transform.position = Vector3.Lerp(cam.transform.position, mov.position, vel * Time.deltaTime);
+    }
 
     public void Mesa()
     {
         barra.sprite = mesa;
+        animPanelBlanco.SetTrigger("Cambio");
+        mov = puntos[0];
+        
     }
 
     public void Cocina()
     {
         barra.sprite = cocina;
+        animPanelBlanco.SetTrigger("Cambio");
+        mov = puntos[1];
+        
     }
 
     public void Bano()
     {
         barra.sprite = bano;
+        animPanelBlanco.SetTrigger("Cambio");
+        mov = puntos[2];
     }
 
     public void Pausa()

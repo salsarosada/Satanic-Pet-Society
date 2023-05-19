@@ -87,8 +87,4 @@ public class Barra : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-    void OnApplicationQuit()
-    {
-        PlayerPrefs.DeleteAll();
-    }
 }

@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Personajes : MonoBehaviour
 {
     public GameObject[] personajes;
     private int indice;
+    public TMP_Text nombre;
+
     void Start()
     {
         indice = 0;
@@ -15,7 +18,7 @@ public class Personajes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        nombre.text = personajes[indice].gameObject.name;
     }
 
     public void Siguiente()
@@ -23,7 +26,7 @@ public class Personajes : MonoBehaviour
         if (indice < personajes.Length-1) {
             personajes[indice].SetActive(false);
             indice++;
-            personajes[indice].SetActive(true);
+            personajes[indice].SetActive(true);            
         }
         else
         {

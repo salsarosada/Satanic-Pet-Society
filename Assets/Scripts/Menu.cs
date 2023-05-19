@@ -9,7 +9,7 @@ public class Menu : MonoBehaviour
 
     public void Inicio()
     {
-        SceneManager.LoadScene("Inicio");
+        SceneManager.LoadScene("Personaje");
     }
 
     public void Creditos()

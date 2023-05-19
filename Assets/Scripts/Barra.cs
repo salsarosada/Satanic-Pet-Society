@@ -17,11 +17,22 @@ public class Barra : MonoBehaviour
     public float vel;
     public Transform mov;
     public Animator animPanelBlanco;
+    private int indicepersonaje;
+    public GameObject[] personajes;
 
     void Start()
     {
+        indicepersonaje = PlayerPrefs.GetInt("Personaje");
         mov = puntos[0];
 
+        //PERSONAJE
+        for (int i = 0; i < personajes.Length; i++)
+        {
+            if(i != indicepersonaje)
+            {
+                Destroy(personajes[i]);
+            }
+        }
     }
 
     void Update()
@@ -74,5 +85,10 @@ public class Barra : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    void OnApplicationQuit()
+    {
+        PlayerPrefs.DeleteAll();
     }
 }

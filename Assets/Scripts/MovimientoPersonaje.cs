@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MovimientoPersonaje : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class MovimientoPersonaje : MonoBehaviour
     public float maxX = 5f;
 
     private bool isMoving = false;
+    private bool clickedOnUI = false;
     private Vector3 targetPosition;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
@@ -21,7 +23,7 @@ public class MovimientoPersonaje : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && !clickedOnUI)
         {
             targetPosition = GetTargetPosition(Input.mousePosition);
             StartMoving();
@@ -31,7 +33,7 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             Touch touch = Input.GetTouch(0);
 
-            if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved)
+            if ((touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved) && !clickedOnUI)
             {
                 targetPosition = GetTargetPosition(touch.position);
                 StartMoving();
@@ -42,6 +44,11 @@ public class MovimientoPersonaje : MonoBehaviour
         {
             MoveToTargetPosition();
         }
+    }
+
+    public void SetClickedOnUI(bool value)
+    {
+        clickedOnUI = value;
     }
 
     private Vector3 GetTargetPosition(Vector2 inputPosition)

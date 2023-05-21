@@ -1297,6 +1297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1305863439}
   - component: {fileID: 1305863440}
+  - component: {fileID: 1305863441}
   m_Layer: 0
   m_Name: Aurelio
   m_TagString: Untagged
@@ -1371,6 +1372,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1305863441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305863438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2863c2f724e21154997e7d0d2aeb457d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  minX: -5
+  maxX: 5
 --- !u!1 &1318559450
 GameObject:
   m_ObjectHideFlags: 0

@@ -88,4 +88,13 @@ public class MovimientoPersonaje : MonoBehaviour
             animator.SetTrigger("Idle");
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Verificar si se ha arrastrado un sprite sobre la mascota
+        if (collision.gameObject.CompareTag("SpriteArrastrado"))
+        {
+            Debug.Log("Sprite arrastrado sobre la mascota");
+        }
+    }
 }

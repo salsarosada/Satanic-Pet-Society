@@ -12,6 +12,7 @@ public class ArrastrarComida : MonoBehaviour
     {
         isDragging = true;
         initialPosition = transform.position;
+        MovimientoPersonaje.singleton.bloqueo = true;
     }
 
     private void OnMouseDrag()
@@ -28,7 +29,7 @@ public class ArrastrarComida : MonoBehaviour
         if (isDragging)
         {
             isDragging = false;
-
+            MovimientoPersonaje.singleton.bloqueo = false;
             // Aquí puedes agregar tu lógica para soltar el sprite, por ejemplo,
             // verificar si el sprite está sobre algún objeto específico y realizar una acción.
 

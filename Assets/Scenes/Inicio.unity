@@ -327,9 +327,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2863c2f724e21154997e7d0d2aeb457d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloqueo: 0
   speed: 5
   minX: -5
   maxX: 5
+  mouseEnUI: 0
 --- !u!1 &338797553
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,7 +983,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 0.63
+  m_FillAmount: 0.701
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1689,9 +1691,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2863c2f724e21154997e7d0d2aeb457d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloqueo: 0
   speed: 10
   minX: -5
   maxX: 5
+  mouseEnUI: 0
 --- !u!95 &1305863442
 Animator:
   serializedVersion: 5
@@ -1813,7 +1817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2693,9 +2697,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2863c2f724e21154997e7d0d2aeb457d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloqueo: 0
   speed: 5
   minX: -5
   maxX: 5
+  mouseEnUI: 0
 --- !u!95 &1541767719
 Animator:
   serializedVersion: 5
@@ -3851,7 +3857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4249,9 +4255,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2863c2f724e21154997e7d0d2aeb457d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloqueo: 0
   speed: 5
   minX: -5
   maxX: 5
+  mouseEnUI: 0
 --- !u!1 &2142760702
 GameObject:
   m_ObjectHideFlags: 0

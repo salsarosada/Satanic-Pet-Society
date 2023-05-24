@@ -11,14 +11,12 @@ public class ObstaculoGenerador : MonoBehaviour
     public float actualVel;
     public float velMult;
     public UIRunner ui;
-    public GameObject monedas;
-    private Text textoObjeto;
+    public TextMeshProUGUI velocidad;
 
     void Awake()
     {
         actualVel = minVel;
         GenerarObs();
-        textoObjeto = monedas.GetComponent<Text>();
     }
 
     public void GenerarObs()
@@ -32,7 +30,7 @@ public class ObstaculoGenerador : MonoBehaviour
         if (ui.juego)
         {
             actualVel += velMult;
-            textoObjeto.text = "Recolectaste " + Mathf.FloorToInt(actualVel / 2) + "monedas";
+            velocidad.text = "Velocidad: " + Mathf.FloorToInt(actualVel);
         }        
     }
 }

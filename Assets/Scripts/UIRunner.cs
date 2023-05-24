@@ -44,5 +44,6 @@ public class UIRunner : MonoBehaviour
     public void Reiniciar()
     {
         SceneManager.LoadScene("Runner");
+        Time.timeScale = 1f;
     }
 }

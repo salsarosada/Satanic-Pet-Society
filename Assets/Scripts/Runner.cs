@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class Runner : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class Runner : MonoBehaviour
     public GameObject[] personajes;
     public GameObject perder;
     public UIRunner ui;
+    public ObstaculoGenerador ob;
+    public TextMeshProUGUI monedas;
+    private Animator animator;
 
     void Awake()
     {
@@ -18,6 +22,7 @@ public class Runner : MonoBehaviour
 
     void Start()
     {
+        animator = this.GetComponent<Animator>();
         indicepersonaje = PlayerPrefs.GetInt("Personaje");        
 
         //PERSONAJE
@@ -38,6 +43,7 @@ public class Runner : MonoBehaviour
             if(isGrounded)
             {
                 RB.AddForce(Vector2.up * fuerza);
+                animator.SetTrigger("Jump");
                 isGrounded = false;
             }
         }
@@ -56,6 +62,7 @@ public class Runner : MonoBehaviour
         {
             Time.timeScale = 0f;
             perder.gameObject.SetActive(true);
+            monedas.text = "Recolectaste " + Mathf.FloorToInt(ob.actualVel / 2) + " monedas";
             ui.juego = false;
         }
     }    

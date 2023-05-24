@@ -19,6 +19,7 @@ public class Barra : MonoBehaviour
     public Animator animPanelBlanco;
     private int indicepersonaje;
     public GameObject[] personajes;
+    public GameObject mapa;
 
     void Start()
     {
@@ -85,6 +86,11 @@ public class Barra : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void Mapa()
+    {
+        mapa.SetActive(true);
     }
 
 }

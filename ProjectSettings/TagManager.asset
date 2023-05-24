@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Pet
   - SpriteArrastrado
+  - ground
+  - NextLine
+  - Obstaculo
   layers:
   - Default
   - TransparentFX

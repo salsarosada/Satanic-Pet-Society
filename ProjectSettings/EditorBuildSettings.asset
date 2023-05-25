@@ -17,6 +17,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Personaje.unity
     guid: bec032853e5cbe94cbd36528ba67658e
+  - enabled: 1
+    path: Assets/Scenes/Bano.unity
+    guid: 09483f3fb30beb64bbfe5b0f6fe2b2ce
+  - enabled: 1
+    path: Assets/Scenes/Cocina.unity
+    guid: ec832e2f0b1bcb84981a9afd356d6e83
+  - enabled: 1
+    path: Assets/Scenes/Runner.unity
+    guid: f538ff76f0e565b44bde9061dfe4e410
+  - enabled: 1
+    path: Assets/Scenes/Pescar.unity
+    guid: 9c37b4babbdc17048b00cdf21539b556
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 52a2cad58eecf984a8d4e2305550c580, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 184a06867dd2f5147ace9b8fc39584d0, type: 2}

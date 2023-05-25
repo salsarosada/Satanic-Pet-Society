@@ -13,9 +13,9 @@ public class Barra : MonoBehaviour
     public GameObject menuPausa;
     public GameObject botonPausa;
     public GameObject cam;
-    public Transform[] puntos;
+    //public Transform[] puntos;
     public float vel;
-    public Transform mov;
+    //public Transform mov;
     public Animator animPanelBlanco;
     private int indicepersonaje;
     public GameObject[] personajes;
@@ -24,7 +24,7 @@ public class Barra : MonoBehaviour
     void Start()
     {
         indicepersonaje = PlayerPrefs.GetInt("Personaje");
-        mov = puntos[0];
+        //mov = puntos[0];
 
         //PERSONAJE
         for (int i = 0; i < personajes.Length; i++)
@@ -38,30 +38,24 @@ public class Barra : MonoBehaviour
 
     void Update()
     {
-        cam.transform.position = Vector3.Lerp(cam.transform.position, mov.position, vel * Time.deltaTime);
+   //     cam.transform.position = Vector3.Lerp(cam.transform.position, mov.position, vel * Time.deltaTime);
     }
 
     public void Mesa()
     {
-        barra.sprite = mesa;
-        animPanelBlanco.SetTrigger("Cambio");
-        mov = puntos[0];
-        
+        SceneManager.LoadScene("Inicio");
+
     }
 
     public void Cocina()
     {
-        barra.sprite = cocina;
-        animPanelBlanco.SetTrigger("Cambio");
-        mov = puntos[1];
-        
+        SceneManager.LoadScene("Cocina");
+
     }
 
     public void Bano()
     {
-        barra.sprite = bano;
-        animPanelBlanco.SetTrigger("Cambio");
-        mov = puntos[2];
+        SceneManager.LoadScene("Bano");
     }
 
     public void Pausa()

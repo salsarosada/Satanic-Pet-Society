@@ -221,6 +221,9 @@ GameObject:
   - component: {fileID: 257428372}
   - component: {fileID: 257428371}
   - component: {fileID: 257428374}
+  - component: {fileID: 257428377}
+  - component: {fileID: 257428376}
+  - component: {fileID: 257428375}
   m_Layer: 0
   m_Name: Nimbo
   m_TagString: Untagged
@@ -378,6 +381,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.65}
   m_EdgeRadius: 0
+--- !u!114 &257428375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257428368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130c1524318930843bc464e135070272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limpiezaBar: {fileID: 1740748221}
+  nivelLimpiezaMaximo: 100
+  nivelLimpiezaMinimo: 30
+  velocidadDecrementoLimpieza: 1.8
+--- !u!114 &257428376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257428368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6eced3f187d0f48926fedc5e0f9061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generadorHambre: {fileID: 257428377}
+--- !u!114 &257428377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257428368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0618d0108191c5429377527b703a8f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hambreInicial: 100
+  velocidadHambre: 2.5
+  imagenHambre: {fileID: 1267751212}
+  hambreActual: 0
 --- !u!1 &257817170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,6 +2491,7 @@ MonoBehaviour:
   hambreInicial: 100
   velocidadHambre: 2.5
   imagenHambre: {fileID: 1267751212}
+  hambreActual: 0
 --- !u!114 &1305863445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3394,6 +3443,9 @@ GameObject:
   - component: {fileID: 1541767718}
   - component: {fileID: 1541767719}
   - component: {fileID: 1541767721}
+  - component: {fileID: 1541767724}
+  - component: {fileID: 1541767723}
+  - component: {fileID: 1541767722}
   m_Layer: 0
   m_Name: Morion
   m_TagString: Untagged
@@ -3551,6 +3603,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48, y: 0.62}
   m_EdgeRadius: 0
+--- !u!114 &1541767722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541767715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130c1524318930843bc464e135070272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limpiezaBar: {fileID: 1740748221}
+  nivelLimpiezaMaximo: 100
+  nivelLimpiezaMinimo: 30
+  velocidadDecrementoLimpieza: 1.8
+--- !u!114 &1541767723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541767715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6eced3f187d0f48926fedc5e0f9061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generadorHambre: {fileID: 1541767724}
+--- !u!114 &1541767724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541767715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0618d0108191c5429377527b703a8f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hambreInicial: 100
+  velocidadHambre: 2.5
+  imagenHambre: {fileID: 1267751212}
+  hambreActual: 500
 --- !u!1 &1606122715
 GameObject:
   m_ObjectHideFlags: 0
@@ -4486,12 +4583,7 @@ MonoBehaviour:
   menuPausa: {fileID: 1187829002}
   botonPausa: {fileID: 1355566751}
   cam: {fileID: 1707185234}
-  puntos:
-  - {fileID: 1451508819}
-  - {fileID: 1186243340}
-  - {fileID: 1473929991}
   vel: 5
-  mov: {fileID: 0}
   animPanelBlanco: {fileID: 1988966393}
   personajes:
   - {fileID: 1305863438}
@@ -4697,6 +4789,9 @@ GameObject:
   - component: {fileID: 2071960383}
   - component: {fileID: 2071960382}
   - component: {fileID: 2071960385}
+  - component: {fileID: 2071960388}
+  - component: {fileID: 2071960387}
+  - component: {fileID: 2071960386}
   m_Layer: 0
   m_Name: Sara
   m_TagString: Untagged
@@ -4854,6 +4949,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.48, y: 0.71}
   m_EdgeRadius: 0
+--- !u!114 &2071960386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071960379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130c1524318930843bc464e135070272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limpiezaBar: {fileID: 1740748221}
+  nivelLimpiezaMaximo: 100
+  nivelLimpiezaMinimo: 30
+  velocidadDecrementoLimpieza: 1.8
+--- !u!114 &2071960387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071960379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6eced3f187d0f48926fedc5e0f9061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generadorHambre: {fileID: 2071960388}
+--- !u!114 &2071960388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071960379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0618d0108191c5429377527b703a8f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hambreInicial: 100
+  velocidadHambre: 2.5
+  imagenHambre: {fileID: 1267751212}
+  hambreActual: 0
 --- !u!1 &2142760702
 GameObject:
   m_ObjectHideFlags: 0

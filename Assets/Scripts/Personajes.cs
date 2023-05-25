@@ -10,6 +10,8 @@ public class Personajes : MonoBehaviour
     private int indice;
     public TMP_Text nombre;
 
+    public SeguirPersonaje camaraScript;
+
     void Start()
     {
         indice = 0;
@@ -57,6 +59,6 @@ public class Personajes : MonoBehaviour
     {
         PlayerPrefs.SetInt("Personaje", indice);
         SceneManager.LoadScene("Inicio");
-
+        camaraScript.personaje = personajes[indice].transform;
     }
 }

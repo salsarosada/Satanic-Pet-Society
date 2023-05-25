@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class ArrastrarComida : MonoBehaviour
+public class ArrastrarObjeto : MonoBehaviour
 {
     private bool isDragging = false;
     private Vector3 initialPosition;
@@ -12,7 +11,6 @@ public class ArrastrarComida : MonoBehaviour
     {
         isDragging = true;
         initialPosition = transform.position;
-        MovimientoPersonaje.singleton.bloqueo = true;
     }
 
     private void OnMouseDrag()
@@ -29,7 +27,7 @@ public class ArrastrarComida : MonoBehaviour
         if (isDragging)
         {
             isDragging = false;
-            MovimientoPersonaje.singleton.bloqueo = false;
+
             // Aquí puedes agregar tu lógica para soltar el sprite, por ejemplo,
             // verificar si el sprite está sobre algún objeto específico y realizar una acción.
 

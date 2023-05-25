@@ -9,6 +9,8 @@ TagManager:
   - ground
   - NextLine
   - Obstaculo
+  - Comida
+  - Mascota
   layers:
   - Default
   - TransparentFX

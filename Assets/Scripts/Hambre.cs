@@ -5,37 +5,33 @@ using UnityEngine.UI;
 
 public class Hambre : MonoBehaviour
 {
-    public Slider foodSlider; // Referencia al Slider de la barra de comida
-    public float maxHunger = 100f; // Valor máximo de la barra de comida
-    public float hungerDecreaseRate = 1f; // Tasa de disminución del hambre por segundo
+    public float hambreInicial = 100f;
+    public float velocidadHambre = 10f;
+    public Image imagenHambre;
 
-    private float currentHunger; // Valor actual de la barra de comida
+    private float hambreActual;
 
     private void Start()
     {
-        currentHunger = maxHunger;
-        UpdateFoodSlider();
+        hambreActual = hambreInicial;
     }
 
     private void Update()
     {
-        DecreaseHungerOverTime();
+        // Actualizar el nivel de hambre
+        hambreActual -= velocidadHambre * Time.deltaTime;
+
+        // Asegurarse de que el nivel de hambre no sea menor que cero
+        hambreActual = Mathf.Max(hambreActual, 0f);
+
+        // Actualizar la imagen de hambre
+        imagenHambre.fillAmount = hambreActual / hambreInicial;
     }
 
-    private void DecreaseHungerOverTime()
+    public void AumentarHambre(float cantidad)
     {
-        currentHunger -= hungerDecreaseRate * Time.deltaTime;
-        currentHunger = Mathf.Clamp(currentHunger, 0f, maxHunger);
-
-        UpdateFoodSlider();
-    }
-
-    private void UpdateFoodSlider()
-    {
-        float targetValue = currentHunger / maxHunger;
-        float currentValue = foodSlider.value;
-        float newValue = Mathf.Lerp(currentValue, targetValue, Time.deltaTime * 5f); // Ajusta la velocidad de la interpolación modificando el factor 5f
-
-        foodSlider.value = newValue;
+        hambreActual += cantidad;
+        hambreActual = Mathf.Clamp(hambreActual, 0f, hambreInicial);
+        imagenHambre.fillAmount = hambreActual / hambreInicial;
     }
 }

@@ -333,8 +333,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloqueo: 0
   speed: 5
-  minX: -5
-  maxX: 5
+  minX: -14
+  maxX: 14
   mouseEnUI: 0
 --- !u!61 &257428374
 BoxCollider2D:
@@ -1060,7 +1060,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582390299}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1788917, y: -3.76, z: 10.048148}
+  m_LocalPosition: {x: -3.1788917, y: -3.76, z: 0.048148155}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1068,8 +1068,8 @@ Transform:
   - {fileID: 1541767716}
   - {fileID: 257428369}
   - {fileID: 2071960380}
-  m_Father: {fileID: 1707185237}
-  m_RootOrder: -1
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &608358437
 GameObject:
@@ -2407,8 +2407,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloqueo: 0
   speed: 10
-  minX: -5
-  maxX: 5
+  minX: -14
+  maxX: 14
   mouseEnUI: 1
 --- !u!95 &1305863442
 Animator:
@@ -3534,8 +3534,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloqueo: 0
   speed: 5
-  minX: -5
-  maxX: 5
+  minX: -14
+  maxX: 14
   mouseEnUI: 0
 --- !u!95 &1541767719
 Animator:
@@ -3870,6 +3870,7 @@ GameObject:
   - component: {fileID: 1707185237}
   - component: {fileID: 1707185236}
   - component: {fileID: 1707185235}
+  - component: {fileID: 1707185238}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3943,15 +3944,28 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707185234}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 582390300}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1707185238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707185234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba103da65cca334284e6c4d3091c597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personaje: {fileID: 1305863439}
+  offset: {x: 0, y: 2.68, z: -0.35}
 --- !u!1 &1740748219
 GameObject:
   m_ObjectHideFlags: 0
@@ -4901,8 +4915,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloqueo: 0
   speed: 5
-  minX: -5
-  maxX: 5
+  minX: -14
+  maxX: 14
   mouseEnUI: 0
 --- !u!61 &2071960385
 BoxCollider2D:

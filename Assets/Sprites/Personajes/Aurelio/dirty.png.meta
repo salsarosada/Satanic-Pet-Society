@@ -1,0 +1,434 @@
+fileFormatVersion: 2
+guid: f4b858621b8ccc342b139c127d30d0a9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 816, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dirty_56
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 812
+        width: 69
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e1449dd2c251148a22d7734874e855
+      internalID: 1822879367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dirty_57
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 726
+        width: 71
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24a90ad889ed4a47a1a87e0c99be691
+      internalID: -1162082885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dirty_58
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 651
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b9288c1f47dd745890515c4db341c1
+      internalID: -81397149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dirty_59
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 567
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a875d8385ae4f4f8111a6ed71ebeda
+      internalID: 462125242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dirty_60
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 488
+        width: 69
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3edefab7141594698ae02957c217e2
+      internalID: 1789815679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dirty_61
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 412
+        width: 65
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2829aaa993740144eb6434e8976f80d7
+      internalID: 718856156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dirty_62
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 334
+        width: 65
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59941604050f17549bebb2f4772ee332
+      internalID: -1052435565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dirty_63
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 252
+        width: 63
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0b58eeef6705748a20b8fbeabbdfb3
+      internalID: 1512261913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dirty_64
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 172
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777d9f98f401fcb46a55dd38deb47055
+      internalID: 867024327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dirty_65
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 94
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9938fceae529a843917486f7f866285
+      internalID: -263275080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dirty_66
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 19
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c5e65efedc86c44889960d60a42e48
+      internalID: -531143968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      dirty_0: 1919996714
+      dirty_1: -1923280856
+      dirty_10: -1071130470
+      dirty_11: 653051332
+      dirty_12: -1338413168
+      dirty_13: -814145909
+      dirty_14: -2076203235
+      dirty_15: -989032412
+      dirty_16: -816287566
+      dirty_17: 93905552
+      dirty_18: 2033291794
+      dirty_19: -1888285472
+      dirty_2: -529300134
+      dirty_20: -1241439729
+      dirty_21: 1224227357
+      dirty_22: 243364033
+      dirty_23: -1637450693
+      dirty_24: -1174273832
+      dirty_25: -69908698
+      dirty_26: 1325008458
+      dirty_27: -1795852650
+      dirty_28: 604939957
+      dirty_29: -823651261
+      dirty_3: -871091638
+      dirty_30: -1220918008
+      dirty_31: -1945377740
+      dirty_32: -1432151403
+      dirty_33: 848938223
+      dirty_34: -2139373661
+      dirty_35: -237034465
+      dirty_36: -1607470652
+      dirty_37: -298563522
+      dirty_38: 1168271741
+      dirty_39: 330405248
+      dirty_4: 1145496924
+      dirty_40: 1007846760
+      dirty_41: 2046985357
+      dirty_42: 249921105
+      dirty_43: -1002075636
+      dirty_44: 1985822620
+      dirty_45: 1164207353
+      dirty_46: -646896111
+      dirty_47: -957402637
+      dirty_48: -428632575
+      dirty_49: 283377073
+      dirty_5: 1048162224
+      dirty_50: 270306049
+      dirty_51: 1564448044
+      dirty_52: 1623770447
+      dirty_53: 1899400654
+      dirty_54: -1324047319
+      dirty_55: -643479178
+      dirty_56: 1822879367
+      dirty_57: -1162082885
+      dirty_58: -81397149
+      dirty_59: 462125242
+      dirty_6: 1087930147
+      dirty_60: 1789815679
+      dirty_61: 718856156
+      dirty_62: -1052435565
+      dirty_63: 1512261913
+      dirty_64: 867024327
+      dirty_65: -263275080
+      dirty_66: -531143968
+      dirty_7: 1479673379
+      dirty_8: -1222730758
+      dirty_9: -1968040495
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -3232,9 +3232,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIRunner, Assembly-CSharp
-        m_MethodName: Terminar
+      - m_Target: {fileID: 756256944}
+        m_TargetAssemblyTypeName: Barra, Assembly-CSharp
+        m_MethodName: Mesa
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4616,8 +4616,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIRunner, Assembly-CSharp
+      - m_Target: {fileID: 756256944}
+        m_TargetAssemblyTypeName: Barra, Assembly-CSharp
         m_MethodName: Pausa
         m_Mode: 1
         m_Arguments:
@@ -5272,9 +5272,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIRunner, Assembly-CSharp
-        m_MethodName: Reiniciar
+      - m_Target: {fileID: 756256944}
+        m_TargetAssemblyTypeName: Barra, Assembly-CSharp
+        m_MethodName: Lago
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

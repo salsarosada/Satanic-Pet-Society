@@ -1273,7 +1273,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1316062673}
         m_TargetAssemblyTypeName: Barra, Assembly-CSharp
         m_MethodName: Reanudar
         m_Mode: 1
@@ -4487,7 +4487,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1316062673}
         m_TargetAssemblyTypeName: Barra, Assembly-CSharp
         m_MethodName: Salir
         m_Mode: 1
@@ -5655,7 +5655,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1316062673}
         m_TargetAssemblyTypeName: Barra, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
@@ -7144,7 +7144,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1316062673}
         m_TargetAssemblyTypeName: Barra, Assembly-CSharp
         m_MethodName: Pausa
         m_Mode: 1

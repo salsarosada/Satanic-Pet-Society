@@ -342,8 +342,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1316062668}
-        m_TargetAssemblyTypeName: Gorritos, Assembly-CSharp
+      - m_Target: {fileID: 1316062674}
+        m_TargetAssemblyTypeName: Mercado, Assembly-CSharp
         m_MethodName: Comprar
         m_Mode: 1
         m_Arguments:
@@ -475,8 +475,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1316062668}
-        m_TargetAssemblyTypeName: Gorritos, Assembly-CSharp
+      - m_Target: {fileID: 1316062674}
+        m_TargetAssemblyTypeName: Mercado, Assembly-CSharp
         m_MethodName: Siguiente
         m_Mode: 1
         m_Arguments:
@@ -848,7 +848,8 @@ Transform:
   m_LocalPosition: {x: 3.1788917, y: 0.8761192, z: -7.22}
   m_LocalScale: {x: 5.37, y: 5.37, z: 5.37}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1980127028}
   m_Father: {fileID: 1922955297}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3835,6 +3836,7 @@ GameObject:
   - component: {fileID: 1135949579}
   - component: {fileID: 1135949581}
   - component: {fileID: 1135949580}
+  - component: {fileID: 1135949582}
   m_Layer: 5
   m_Name: Gorritos
   m_TagString: Untagged
@@ -3851,7 +3853,7 @@ RectTransform:
   m_GameObject: {fileID: 1135949578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6600001, y: 1.6600001, z: 1.6600001}
+  m_LocalScale: {x: 0.86, y: 1.1896666, z: 1.1896666}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2012542111}
@@ -3859,7 +3861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.9, y: -25}
+  m_AnchoredPosition: {x: 2.9, y: -4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1135949580
@@ -3882,7 +3884,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1ba29c7360b243d4d91880ced6a59afc, type: 3}
+  m_Sprite: {fileID: -1589799703, guid: 60cc15b5d79bdaf44be361a424a23d3b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3900,6 +3902,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135949578}
   m_CullTransparentMesh: 1
+--- !u!95 &1135949582
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135949578}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1155472079
 GameObject:
   m_ObjectHideFlags: 0
@@ -4513,9 +4536,10 @@ GameObject:
   - component: {fileID: 1316062671}
   - component: {fileID: 1316062670}
   - component: {fileID: 1316062669}
-  - component: {fileID: 1316062668}
   - component: {fileID: 1316062672}
   - component: {fileID: 1316062673}
+  - component: {fileID: 1316062674}
+  - component: {fileID: 1316062675}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -4523,36 +4547,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1316062668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316062667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1c3ae71dc80f534da0d7e1bc624aa0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imagen: {fileID: 1135949580}
-  gorritos:
-  - {fileID: 21300000, guid: 1ba29c7360b243d4d91880ced6a59afc, type: 3}
-  - {fileID: 21300000, guid: d9a7f29e1e8326d4cb25db8858a5da5c, type: 3}
-  - {fileID: 21300000, guid: 9d29dd8cfd74d0c4fb3dfbca780755de, type: 3}
-  - {fileID: 21300000, guid: 0a6e2b670f12b4d4bb692890fe64e6cc, type: 3}
-  - {fileID: 21300000, guid: c504a4fbe8d6754469918e4aaa978fe0, type: 3}
-  - {fileID: 21300000, guid: 1f0131a17fa7682488b03a73a69e0bda, type: 3}
-  - {fileID: 21300000, guid: f1686955a2444264ebcffc4003093106, type: 3}
-  - {fileID: 21300000, guid: 7fc5c4d6e9e423b46a91c5a29ab6666c, type: 3}
-  - {fileID: 21300000, guid: 196694e4c85ce7d4a95054dc615665eb, type: 3}
-  - {fileID: 21300000, guid: 5bfe118fc785dd14fa5eefc19b906bf7, type: 3}
-  - {fileID: 21300000, guid: 767d1845185ce9e43bfef8df3e1dcda1, type: 3}
-  - {fileID: 21300000, guid: 45303b0eb5aa9fc46980e0c6f6569e6a, type: 3}
-  - {fileID: 21300000, guid: 306bafbebc2a80846b021eb9501fc449, type: 3}
-  preciotxt: {fileID: 1164135768}
-  precios: 1e00000019000000320000002300000014000000280000001e000000280000001900000019000000500000001e00000028000000
-  gorroPuesto: {fileID: 0}
 --- !u!114 &1316062669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4645,6 +4639,127 @@ MonoBehaviour:
   mapa: {fileID: 1096189998}
   dinero: 0
   dinerotxt: {fileID: 1567593257}
+--- !u!114 &1316062674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316062667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea77a28f39fe2f46a209bb197bf88f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagen: {fileID: 1135949580}
+  comida:
+  - {fileID: -1589799703, guid: 60cc15b5d79bdaf44be361a424a23d3b, type: 3}
+  - {fileID: -2078142914, guid: fd9fba28bc4f78b4197658dd797516bb, type: 3}
+  - {fileID: -634274005, guid: 714a47e55a21b16429e0e99feee39361, type: 3}
+  preciotxt: {fileID: 1164135768}
+  precios: 23000000190000001e000000
+  prefabComida:
+  - {fileID: 573389206857084819, guid: fbd1713865a72274abd46d711a4826d2, type: 3}
+  - {fileID: 4325253077757210154, guid: 2e0bf91576964ac49a1bbf8e04b24ea0, type: 3}
+  - {fileID: 9118637496925736473, guid: a59f4455f841f7c47a9c91d8d35bae76, type: 3}
+  animator: {fileID: 166205666}
+  personaje: {fileID: 166205659}
+--- !u!82 &1316062675
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316062667}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f56181b29bb3c4548ae1c52763226a11, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1563124492
 GameObject:
   m_ObjectHideFlags: 0
@@ -5947,8 +6062,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1316062668}
-        m_TargetAssemblyTypeName: Gorritos, Assembly-CSharp
+      - m_Target: {fileID: 1316062674}
+        m_TargetAssemblyTypeName: Mercado, Assembly-CSharp
         m_MethodName: Anterior
         m_Mode: 1
         m_Arguments:
@@ -6123,7 +6238,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1980127028}
   - {fileID: 166205659}
   - {fileID: 346668696}
   - {fileID: 2062225480}
@@ -6423,11 +6537,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980127027}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.16, y: 1, z: -8.3}
-  m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
+  m_LocalPosition: {x: -0.003517984, y: 0.023069052, z: -0.20111741}
+  m_LocalScale: {x: 0.83798885, y: 0.83798885, z: 0.83798885}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1922955297}
+  m_Father: {fileID: 166205659}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1980127029
@@ -6470,7 +6584,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 125
   m_Sprite: {fileID: 21300000, guid: 1ba29c7360b243d4d91880ced6a59afc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

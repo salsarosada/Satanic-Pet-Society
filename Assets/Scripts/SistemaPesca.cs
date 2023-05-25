@@ -9,11 +9,16 @@ public class SistemaPesca : MonoBehaviour
     public Animator animator;
     public GameObject[] fishPrefabs;
     public Transform fishingRod;
-
+    private int dinero;
     public TMPro.TextMeshProUGUI coinsText;
-    public int coinsPerFish = 10;
+    public int coinsPerFish = 2;
 
     private int coins = 0;
+
+    void Start()
+    {
+        dinero = PlayerPrefs.GetInt("Dinero");
+    }
 
     private void Update()
     {
@@ -48,7 +53,8 @@ public class SistemaPesca : MonoBehaviour
         Destroy(fish, 2f);
 
         // Sumar monedas y actualizar la UI
-        coins += coinsPerFish;
-        coinsText.text = "Coins: " + coins.ToString();
+        dinero += coinsPerFish;
+        coinsText.text = "Monedas: " + dinero.ToString();
+        PlayerPrefs.SetInt("Dinero", dinero);
     }
 }

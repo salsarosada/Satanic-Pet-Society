@@ -17,6 +17,7 @@ public class MovimientoPersonaje : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
     public bool mouseEnUI;
+
     private void Awake()
     {
         singleton = this;
@@ -44,6 +45,7 @@ public class MovimientoPersonaje : MonoBehaviour
             MoveToTargetPosition();
         }
     }
+
 
     public void SetClickedOnUI(bool value)
     {

@@ -14,6 +14,7 @@ public class Runner : MonoBehaviour
     public ObstaculoGenerador ob;
     public TextMeshProUGUI monedas;
     private Animator animator;
+    private int dinero;
 
     void Awake()
     {
@@ -23,7 +24,8 @@ public class Runner : MonoBehaviour
     void Start()
     {
         animator = this.GetComponent<Animator>();
-        indicepersonaje = PlayerPrefs.GetInt("Personaje");        
+        indicepersonaje = PlayerPrefs.GetInt("Personaje");
+        dinero = PlayerPrefs.GetInt("Dinero");
 
         //PERSONAJE
         for (int i = 0; i < personajes.Length; i++)
@@ -61,9 +63,11 @@ public class Runner : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstaculo"))
         {
             Time.timeScale = 0f;
-            perder.gameObject.SetActive(true);
+            perder.gameObject.SetActive(true);            
+            dinero += Mathf.FloorToInt(ob.actualVel / 2);
             monedas.text = "Recolectaste " + Mathf.FloorToInt(ob.actualVel / 2) + " monedas";
             ui.juego = false;
+            PlayerPrefs.SetInt("Dinero", dinero);
         }
     }    
 }

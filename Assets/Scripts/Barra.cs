@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Barra : MonoBehaviour
 {
@@ -13,18 +14,18 @@ public class Barra : MonoBehaviour
     public GameObject menuPausa;
     public GameObject botonPausa;
     public GameObject cam;
-    //public Transform[] puntos;
     public float vel;
-    //public Transform mov;
     public Animator animPanelBlanco;
     private int indicepersonaje;
     public GameObject[] personajes;
     public GameObject mapa;
+    public int dinero;
+    public TextMeshProUGUI dinerotxt;
 
     void Start()
     {
         indicepersonaje = PlayerPrefs.GetInt("Personaje");
-        //mov = puntos[0];
+        dinero = 100;        
 
         //PERSONAJE
         for (int i = 0; i < personajes.Length; i++)
@@ -38,7 +39,9 @@ public class Barra : MonoBehaviour
 
     void Update()
     {
-   //     cam.transform.position = Vector3.Lerp(cam.transform.position, mov.position, vel * Time.deltaTime);
+        dinero = PlayerPrefs.GetInt("Dinero");
+        dinerotxt.text = dinero.ToString();
+        PlayerPrefs.SetInt("Dinero", dinero);
     }
 
     public void Mesa()

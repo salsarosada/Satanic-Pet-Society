@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pescar.unity
     guid: 9c37b4babbdc17048b00cdf21539b556
+  - enabled: 1
+    path: Assets/Scenes/Boutique.unity
+    guid: 1735b96264447c546b56da8318ef66c7
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 52a2cad58eecf984a8d4e2305550c580, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 184a06867dd2f5147ace9b8fc39584d0, type: 2}

@@ -84,7 +84,26 @@ public class Barra : MonoBehaviour
 
     public void Mapa()
     {
-        mapa.SetActive(true);
+        mapa.SetActive(!(mapa.activeSelf));
     }
 
+    public void Coliseo()
+    {
+        SceneManager.LoadScene("Runner");
+    }
+
+    public void Lago()
+    {
+        SceneManager.LoadScene("Pescar");
+    }
+
+    public void Boutique()
+    {
+        SceneManager.LoadScene("Boutique");
+    }
+
+    public void Mercado()
+    {
+        SceneManager.LoadScene("Mercado");
+    }
 }

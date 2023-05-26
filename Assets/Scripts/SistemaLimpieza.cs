@@ -38,4 +38,11 @@ public class SistemaLimpieza : MonoBehaviour
             // Ejemplo: GetComponent<SpriteRenderer>().sprite = spriteSucio;
         }
     }
+
+    public void AumentarLimpieza(float cantidad)
+    {
+        nivelLimpiezaActual += cantidad;
+        nivelLimpiezaActual = Mathf.Clamp(nivelLimpiezaActual, 0f, nivelLimpiezaMaximo);
+        limpiezaBar.fillAmount = nivelLimpiezaActual / nivelLimpiezaMaximo;
+    }
 }

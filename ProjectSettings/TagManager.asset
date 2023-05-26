@@ -11,6 +11,7 @@ TagManager:
   - Obstaculo
   - Comida
   - Mascota
+  - Esponja
   layers:
   - Default
   - TransparentFX

@@ -15,7 +15,7 @@ public class SistemaLimpieza : MonoBehaviour
     private void Start()
     {
         nivelLimpiezaActual = nivelLimpiezaMaximo;
-        nivelLimpiezaActual = PlayerPrefs.GetInt("Limpieza");
+        //nivelLimpiezaActual = PlayerPrefs.GetInt("Limpieza");
     }
 
     private void Update()
@@ -27,7 +27,7 @@ public class SistemaLimpieza : MonoBehaviour
         float fillAmount = nivelLimpiezaActual / nivelLimpiezaMaximo;
         limpiezaBar.fillAmount = fillAmount;
 
-        PlayerPrefs.SetInt("Limpieza", Mathf.RoundToInt(nivelLimpiezaActual));
+        //PlayerPrefs.SetInt("Limpieza", Mathf.RoundToInt(nivelLimpiezaActual));
 
         // Verificar si el nivel de limpieza está por debajo del mínimo
         if (nivelLimpiezaActual < nivelLimpiezaMinimo)

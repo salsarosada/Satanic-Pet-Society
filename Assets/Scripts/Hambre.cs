@@ -14,7 +14,7 @@ public class Hambre : MonoBehaviour
     private void Start()
     {
         hambreActual = hambreInicial;
-        hambreActual = PlayerPrefs.GetInt("Hambre");
+        //hambreActual = PlayerPrefs.GetInt("Hambre");
     }
 
     private void Update()
@@ -28,7 +28,7 @@ public class Hambre : MonoBehaviour
         // Actualizar la imagen de hambre
         imagenHambre.fillAmount = hambreActual / hambreInicial;
 
-        PlayerPrefs.SetInt("Hambre", Mathf.RoundToInt(hambreActual));
+        //PlayerPrefs.SetInt("Hambre", Mathf.RoundToInt(hambreActual));
     }
 
     public void AumentarHambre(float cantidad)
